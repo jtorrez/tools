@@ -52,9 +52,9 @@ An example of the daily git workflow for the DSI class.
 ### Second Driver
 **Assumes you did all steps in Before Starting Work**
 
-1. Pull your ***partners*** work onto your local machine
-    * `git pull <partners remote alias> <partners pair branch name>`
-        * Merges your partners changes onto your *currently checked out branch.*
+1. Pull your ***partner's*** work onto your local machine
+    * `git pull <partner's remote alias> <partner's pair branch name>`
+        * Merges your partner's changes onto your *currently checked out branch.*
 2. Do work, follow ABC (Always Be Committing)
     * `git status` (check for your modifications)
     * `git add <file you changed>` (repeat for all files)
@@ -93,11 +93,11 @@ An example of the daily git workflow for the DSI class.
     * `git add <file you changed>` (repeat for all files)
         * `git add .` is the shorthand way to add all changes to your index for commit. It is best not to do this, especially if you haven't set up a proper `.gitignore` file, but it is especially poor form when you haven't run `git status` first.
     * `git commit -m <commit message>`
-        * Make your commit message helpful. `Change some stuff` doensn't help anyone. Remember, be kind to future you, make your commits and docs useful.
+        * Make your commit message helpful. `changed some stuff` doesn't help anyone. Remember, be kind to future you, make your commits and docs useful.
 6. Push morning work to remote repo
     * `git push <remote> <local individual branch name>:<remote individual branch name>`
         * The name for your remote will be `origin` by default.
-        * The `<local branch>:<remote branch>` notation allows you to be explicit about where you are sending commits.
+        * The `<local branch>:<remote branch>` notation allows you to be explicit about where you are sending commits. If the `<remote branch>` doesn't exist, git will dynamically create it for you.
 
 ## Afternoon
 
@@ -113,7 +113,7 @@ An example of the daily git workflow for the DSI class.
     * (if not on pair branch) `git checkout <pair branch name>`
 4. Add each other's remotes to your local repo
     * `git remote add <alias> <your partner's repo url>`
-        * This step can be done before your first pull, but it is easier to get all the set up out of the way at the beginning of the exercise.
+        * This step can be done at any time before your first pull, but it is easier to get all the set up out of the way at the beginning of the exercise.
         * You don't have to specify an alias, but if you choose not to, every time you want to pull from a remote you'll have to use the full remote url.
 
 
@@ -131,11 +131,11 @@ An example of the daily git workflow for the DSI class.
 ### Second Driver
 **Assumes you did all steps in Before Starting Work**
 
-1. Pull your ***partners*** work onto your local machine
-    * `git pull <partners remote alias> <partners pair branch name>`
+1. Pull your ***partner's*** work onto your local machine
+    * `git pull <partner's remote alias> <partner's pair branch name>`
         * Merges your partner's changes onto your *currently checked out branch*
         * git pull is shorthand for two separate commands: `git fetch <alias> <branch>` followed by `git merge`
-        * `git fetch` downloads all the commits from the remote repo to your local repo and updates where your remote branch points. It doesn't change anything about your local branches. Running `git fetch` alone instead of `git pull` gives you flexibility to choose how to incorporate those changes (`git rebase` or other fancy git things) instead of being forced to use `git merge`.
+        * `git fetch` downloads all the commits from the remote repo to your local repo and updates where your remote branch points. It doesn't change anything about your local branches. Running `git fetch` instead of `git pull` gives you flexibility to choose how to incorporate those changes (`git rebase` or other fancy git things) instead of being forced to use `git merge`.
 2. Do work, follow ABC (Always Be Committing)
     * `git status` (check for your modifications)
     * `git add <file you changed>` (repeat for all files)
