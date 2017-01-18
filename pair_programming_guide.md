@@ -41,7 +41,8 @@ tl;dr version
     * `git remote add <alias> <your partner's repo url>`
 
 ### First Driver
-*Assumes you did all steps in Before Starting Work*
+**Assumes you did all steps in Before Starting Work**
+
 1. Do work, follow ABC (Always Be Committing)
     * `git status` (check for your modifications)
     * `git add <file you changed` (repeat for all files)
@@ -51,7 +52,8 @@ tl;dr version
         * The name for ***your*** remote will be `origin` by default
 
 ### Second Driver
-*Assumes you did all steps in Before Starting Work*
+**Assumes you did all steps in Before Starting Work**
+
 1. Pull your ***partners*** work onto your local machine
     * `git pull <partners remote alias> <partners pair branch name>`
     * Merges your partners changes onto your *currently checked out branch*
