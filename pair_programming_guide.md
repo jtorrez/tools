@@ -17,7 +17,7 @@ tl;dr version
     * (if not on individual branch) `git checkout <individual branch name>`
 5. Do work, follow ABC (Always Be Committing)
     * `git status` (check for your modifications)
-    * `git add <file you changed` (repeat for all files)
+    * `git add <file you changed>` (repeat for all files)
     * `git commit -m <commit message>`
 6. Push morning work to remote repo
     * `git push <remote> <local individual branch name>:<remote individual branch name>`
@@ -30,7 +30,7 @@ tl;dr version
 ### Before Starting Work (Both Partners Do This)
 1. Check for local modifications that need to be committed, commit them
     * `git status` (check for your modifications)
-    * `git add <file you changed` (repeat for all files)
+    * `git add <file you changed>` (repeat for all files)
     * `git commit -m <commit message>`
 2. Checkout to your pair branch
     * `git checkout <pair branch name>`
@@ -45,7 +45,7 @@ tl;dr version
 
 1. Do work, follow ABC (Always Be Committing)
     * `git status` (check for your modifications)
-    * `git add <file you changed` (repeat for all files)
+    * `git add <file you changed>` (repeat for all files)
     * `git commit -m <commit message>`
 2. Push initial work to ***your*** remote repo
     * `git push <your remote> <your local pair branch name>:<your remote pair branch name>`
@@ -59,7 +59,7 @@ tl;dr version
     * Merges your partners changes onto your *currently checked out branch*
 2. Do work, follow ABC (Always Be Committing)
     * `git status` (check for your modifications)
-    * `git add <file you changed` (repeat for all files)
+    * `git add <file you changed>` (repeat for all files)
     * `git commit -m <commit message>`
 3. Push the new changes/commits to ***your*** remote repo
     * `git push <your remote> <your local pair branch name>:<your remote pair branch name>`
