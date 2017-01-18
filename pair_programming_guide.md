@@ -1,9 +1,9 @@
 # Git Daily Workflow
 An example of the daily git workflow for the DSI class.
 
-## Morning
+# Morning
 
-tl;dr version
+## tl;dr version
 
 1. Fork zipfian repo for the day
     * in browser
@@ -23,9 +23,9 @@ tl;dr version
     * `git push <remote> <local individual branch name>:<remote individual branch name>`
         * The name for your remote will be `origin` by default
 
-## Afternoon
+# Afternoon
 
-tl;dr version
+## tl;dr version
 
 ### Before Starting Work (Both Partners Do This)
 1. Check for local modifications that need to be committed, commit them
