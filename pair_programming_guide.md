@@ -78,6 +78,10 @@ An example of the daily git workflow for the DSI class.
 3. Create individual and pair branches
     * `git checkout -b <individual branch name>`
     * `git checkout -b <pair branch name>`
+        * We create both branches ***immdediately*** after cloning the repo onto our computer for a few reasons:
+            1. Keep the `master` branch clean. The `master` branch will point to the commit that represents the same state as the original Zipfian repo.
+            2. Keep *your* work completely separate from your partner's work to avoid merge conflicts. The `individual` branch will contain only your morning work. The `pair` branch will contain only partner work.
+            3. Make the creation of the `pair` branch painless. If you wait to create the `pair` branch until the afternoon, you'll have to first `git checkout` to the commit that represents the clean Zipfian repo (if you're following the steps, this will be your `master` branch), then create the branch from that commit. Your partner will get your `individual` branch changes if you don't remember to do this and you'll have the joy of dealing with merge conflicts.
         * `git checkout -b <branch name>` is shorthand for two separate commands: `git branch <branch name>` followed by `git checkout <branch name>`
         * You can think of this command as saying "Make a new branch, then go point to it and track changes from there on."
         * `git checkout` tells your `HEAD` which commit it should point to. Usually you have it point to a branch, but you can technically have it point to any commit in your tree (or commits in remotes you are tracking).
@@ -102,12 +106,16 @@ An example of the daily git workflow for the DSI class.
 ## Afternoon
 
 ### Before Starting Work (Both Partners Do This)
+
 1. Check for local modifications that need to be committed, commit them
     * `git status` (check for your modifications)
     * `git add <file you changed>` (repeat for all files)
     * `git commit -m <commit message>`
 2. Checkout to your pair branch
     * `git checkout <pair branch name>`
+    * If you didn't create a `pair` branch in the morning, you have to do a few extra things.
+        1. Checkout to the commit that represents the clean Zipfian repo, if you are following this guide that should be `git checkout master`
+        2. Create your `pair` branch using `git checkout -b pair`
 3. Double check you are on pair branch before starting pair exercise
     * `git branch`
     * (if not on pair branch) `git checkout <pair branch name>`
