@@ -180,7 +180,7 @@ A day in the life of Miles, star Galvanize student. Miles's Github username is `
             master
 
             pair
-            
+
             *individual
             ```
 5. Do work, follow ABC (Always Be Committing)
@@ -206,7 +206,9 @@ Miles is now working with his partner for the afternoon, Mossy. Mossy's Github u
         * Output:
             ```
             master
+
             *pair
+            
             individual
             ```
 4. Add each other's remotes to your local repo
