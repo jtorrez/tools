@@ -176,7 +176,7 @@ A day in the life of Miles, star Galvanize student. Miles's Github username is `
 4. Double check you are on individual branch before starting morning exercise
     * `git branch`
         * Output:
-            ```bash
+            ```
             master
             pair
             *individual
@@ -202,7 +202,7 @@ Miles is now working with his partner for the afternoon, Mossy. Mossy's Github u
 3. Double check you are on pair branch before starting pair exercise
     * `git branch`
         * Output:
-            ```bash
+            ```
             master
             *pair
             individual
