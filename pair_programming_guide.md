@@ -178,7 +178,9 @@ A day in the life of Miles, star Galvanize student. Miles's Github username is `
         * Output:
             ```
             master
+
             pair
+            
             *individual
             ```
 5. Do work, follow ABC (Always Be Committing)
